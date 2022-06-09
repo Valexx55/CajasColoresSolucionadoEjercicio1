@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:id="@+id/caja_verde"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:onClick="cajaTocada"
+            android:orientation="horizontal"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/caja_amarilla"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/yellow"
+            android:onClick="cajaTocada"
+            android:orientation="horizontal"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:id="@+id/caja_azul"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:onClick="cajaTocada"
+            android:orientation="horizontal"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/caja_roja"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:onClick="cajaTocada"
+            android:orientation="horizontal"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/caja_blanca"
+    android:layout_gravity="center"
+    android:layout_width="250dp"
+    android:layout_height="350dp"
+    android:background="@color/white"
+    android:onClick="cajaTocada"
+    android:orientation="horizontal">
+
+</LinearLayout>
+</FrameLayout>
+
+
